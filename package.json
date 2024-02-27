@@ -1,0 +1,33 @@
+{
+  "name": "server-form-generator",
+  "version": "1.0.0",
+  "description": "Servidor del Formulario",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinRFZ/server-form-generator.git"
+  },
+  "author": "Martin Ramses Flores Zepeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinRFZ/server-form-generator/issues"
+  },
+  "homepage": "https://github.com/MartinRFZ/server-form-generator#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.3",
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
