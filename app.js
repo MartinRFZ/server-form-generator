@@ -1,10 +1,11 @@
 import express from 'express'
-import { dbConnection } from './src/db.js'
+import { dbConection } from './src/db.js'
 import formRoutes from './src/routes/routes.js'
 import cors from 'cors'
 import morgan from 'morgan'
 
 const app = express()
+const port = process.env.PORT
 
 app.use(express.json())
 
@@ -17,7 +18,8 @@ app.get('/', (req, res) => {
 
 app.use(formRoutes)
 
-dbConnection()
-app.listen(3000, () => {
-  console.log('Server on port 3000')
+dbConection()
+
+app.listen(port, () => {
+  console.log(`Server on port ${port}`)
 })
